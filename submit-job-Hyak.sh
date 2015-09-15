@@ -5,7 +5,10 @@
 ##
 ## #PBS is a directive requesting job scheduling resources
 ## and ALL PBS directives must be at the top of the script, 
-## standard bash commands can follow afterwards. 
+## standard bash commands can follow afterwards.
+## NOTE: Lines that begin with #PBS are commands to PBS,
+##       and they are not comment lines.  To comment out
+##       use "#  PBS".
 ## --------------------------------------------------------
 
 
