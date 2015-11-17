@@ -23,11 +23,11 @@ run graphical programs or test/bugfix your code to see if it immeditaley crashes
 
     qsub -W group_list=hyak-stf -I -V -l nodes=3:ppn=16,feature=intel
 
-This commands runs on nodes belonging to the "stf" group, starts as interactive (-I) with graphics (-V), and options (-l) to run on 3 nodes with 16 cores each (48 cores total).  You 
-might wait at the terminal for a little while (unable to type anything) until the queing systems lets you start.
+This commands runs on nodes belonging to the "stf" group, starts as interactive (-I) with graphics (-V), and options (-l) to run on 3 nodes with 16 processors-per-node (total 48 CPU-cores).  You 
+might wait at the terminal for a little while (unable to type anything) until the queing systems lets you start (now can type things again).
 
 Rather then remember and typing all these commands, it is convenient to just include them in a BASH script with an easier name to remember (see the example scripts 
-logon-interactive-*.sh).  Keep these scripts in your home folder, which is where the login node defaults to:
+logon-interactive-*.sh).  It is convenient to keep these scripts in your home folder:
 
-    ~/logon-interactive-mySpecialCase.sh
+    ~/logon-interactive-*.sh
 
